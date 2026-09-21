@@ -3,6 +3,8 @@
 # regenerable. Backed up separately.
 data/raw/
 data/interim/
+data/manifests/box_check/
+
 
 
 # --- Models & experiment output ----------------------------------------
@@ -33,3 +35,6 @@ Thumbs.db
 
 # ---diagnostic-----------------------------------------------------------
 src/check_boxes
+
+# --- tools --------------------------------------------------------------
+tools/label-studio/ls-data/

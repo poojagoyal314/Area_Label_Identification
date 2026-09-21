@@ -1,0 +1,27 @@
+# Label Studio as a local annotation appliance — OFF-THE-SHELF software we
+# PULL and run, not build (cf. the `image: postgres:16` pattern, not `build: .`).
+# Kept separate from the application compose: this is dev-tooling, not the product.
+#
+# Two bind mounts:
+#   1. app state  -> persistence of projects + annotations (lose this = lose work)
+#   2. source imgs-> the images to label, served via local-storage (off by default)
+
+services:
+  label-studio:
+    image: heartexlabs/label-studio:latest # pulled
+    ports:
+      - "8080:8080" # web app; 
+    volumes:
+      # 1. PERSISTENCE (bind mount) — LS's SQLite db + all annotations.
+      #    ./ls-data is created on your host; you can watch annotations land here.
+      - ./ls-data:/label-studio/data
+      # 2. SOURCE IMAGES (bind mount, READ-ONLY) — your converted set.
+      #    :ro because LS should never write to your images. Note the path is
+      #    RELATIVE to THIS compose file, so ../../ climbs back to project root.
+      - ../../data/interim:/label-studio/files/interim:ro
+    environment:
+      # Switch ON local-file serving (off by default for security).
+      - LABEL_STUDIO_LOCAL_FILES_SERVING_ENABLED=true
+      # The CEILING for what LS will serve. Must match the container-side
+      # mount point above (or a parent of it). This is the security boundary.
+      - LABEL_STUDIO_LOCAL_FILES_DOCUMENT_ROOT=/label-studio/files
