@@ -34,7 +34,7 @@ Thumbs.db
 
 
 # ---diagnostic-----------------------------------------------------------
-src/check_boxes
+src\check_boxes
 
 # --- tools --------------------------------------------------------------
 tools/label-studio/ls-data/
