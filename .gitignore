@@ -1,0 +1,35 @@
+# --- Data: binaries out, annotations in --------------------------------
+# Raw originals and converted interims are binary, bulky, and (for interim)
+# regenerable. Backed up separately.
+data/raw/
+data/interim/
+
+
+# --- Models & experiment output ----------------------------------------
+# Trained weights are large binaries, regenerable from code+data. Out.
+models/
+*.pt
+*.pth
+*.onnx
+
+# MLflow local tracking store. This is generated experiment data, not source.
+mlruns/
+
+# --- Python -------------------------------------------------------------
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+*.egg-info/
+
+# --- Notebooks ----------------------------------------------------------
+.ipynb_checkpoints/
+
+# --- OS cruft -----------------------------------------------------------
+.DS_Store
+Thumbs.db
+
+
+# ---diagnostic-----------------------------------------------------------
+src/check_boxes
