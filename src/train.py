@@ -23,17 +23,18 @@ a reduced-epoch suggestion. Decide GPU vs CPU after seeing it run.
 from pathlib import Path
 import csv
 import sys
+import os
 
 # --- config ---------------------------------------------------------------
 DATA_YAML   = Path("data/yolo/data.yaml")
 SPLIT       = Path("data/splits/split.csv")
 ATTRIBUTES  = Path("data/manifests/attributes.csv")
-BASE_MODEL  = "yolo11n.pt"          # nano, pretrained — fine-tune from this
-IMG_SIZE    = 960                    # input resolution (tunable later; see floor discussion)
-EPOCHS      = 100                    # early-stopping will likely cut this short
-PATIENCE    = 20                     # early-stop patience
 EXPERIMENT  = "area_label_detector"
-RUN_NAME    = "smoke_test_nano_blended"
+BASE_MODEL  = os.environ.get("BASE_MODEL", "yolo11n.pt")
+IMG_SIZE    = int(os.environ.get("IMG_SIZE", "960"))
+EPOCHS      = int(os.environ.get("EPOCHS", "100"))
+PATIENCE    = int(os.environ.get("PATIENCE", "20"))
+RUN_NAME    = os.environ.get("RUN_NAME", "nano_run")
 MLFLOW_URI  = "sqlite:///mlflow.db"  # clean single-file backend (not mlruns/ sprawl)
 
 
