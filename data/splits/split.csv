@@ -1,0 +1,261 @@
+image,split,presence,modality
+1.jpg,train,positive,video_frame
+10.jpg,train,positive,video_frame
+11.jpg,test,positive,video_frame
+12.jpg,train,positive,video_frame
+13.jpg,test,positive,video_frame
+14.jpg,train,positive,video_frame
+15.jpg,train,positive,video_frame
+16.jpg,train,positive,video_frame
+17.jpg,train,positive,video_frame
+18.jpg,test,positive,video_frame
+19.jpg,test,positive,video_frame
+2.jpg,train,positive,video_frame
+20.jpg,test,positive,video_frame
+20250714_130346.jpg,train,positive,phone_photo
+20250714_130455.jpg,train,positive,phone_photo
+20250714_130501.jpg,train,positive,phone_photo
+20250714_130631.jpg,train,positive,phone_photo
+20250714_140632.jpg,train,positive,phone_photo
+20250714_140640.jpg,train,positive,phone_photo
+20250714_141233.jpg,train,positive,phone_photo
+20250714_141318.jpg,train,positive,phone_photo
+20250714_141429.jpg,test,positive,phone_photo
+20250714_141512.jpg,train,positive,phone_photo
+20250714_141628.jpg,train,positive,phone_photo
+20250714_141841.jpg,train,positive,phone_photo
+20250714_141849.jpg,train,positive,phone_photo
+20250714_141920.jpg,train,positive,phone_photo
+20250714_141931.jpg,test,positive,phone_photo
+20250714_142146.jpg,train,positive,phone_photo
+20250714_142151.jpg,test,positive,phone_photo
+20250714_142220.jpg,test,positive,phone_photo
+20250714_142430.jpg,train,positive,phone_photo
+20250714_142437.jpg,train,positive,phone_photo
+20250714_142506.jpg,train,positive,phone_photo
+20250714_142729.jpg,train,positive,phone_photo
+20250714_142746.jpg,train,positive,phone_photo
+20250714_142755.jpg,train,positive,phone_photo
+20250714_142821.jpg,train,positive,phone_photo
+20250714_143055.jpg,train,positive,phone_photo
+20250714_143058.jpg,train,positive,phone_photo
+20250714_143120.jpg,train,positive,phone_photo
+20250714_143130.jpg,train,positive,phone_photo
+20250714_143156.jpg,test,positive,phone_photo
+20250714_143214.jpg,train,positive,phone_photo
+20250714_143223.jpg,test,positive,phone_photo
+20250714_143314.jpg,test,positive,phone_photo
+20250714_143319.jpg,train,positive,phone_photo
+20250714_143324.jpg,train,positive,phone_photo
+20250714_143336.jpg,train,positive,phone_photo
+20250714_143340.jpg,train,positive,phone_photo
+20250714_143346.jpg,train,positive,phone_photo
+21.jpg,train,positive,video_frame
+22.jpg,test,positive,video_frame
+23.jpg,train,positive,video_frame
+24.jpg,train,positive,video_frame
+25.jpg,train,positive,video_frame
+26.jpg,train,positive,video_frame
+27.jpg,train,positive,video_frame
+28.jpg,train,positive,video_frame
+29.jpg,train,positive,video_frame
+3.jpg,test,positive,video_frame
+30.jpg,test,positive,video_frame
+31.jpg,train,positive,video_frame
+32.jpg,train,positive,video_frame
+33.jpg,train,positive,video_frame
+34.jpg,train,positive,video_frame
+35.jpg,test,positive,video_frame
+36.jpg,train,positive,video_frame
+37.jpg,train,positive,video_frame
+38.jpg,train,positive,video_frame
+39.jpg,train,positive,video_frame
+4.jpg,train,positive,video_frame
+40.jpg,test,positive,video_frame
+41.jpg,train,positive,video_frame
+42.jpg,train,positive,video_frame
+43.jpg,train,positive,video_frame
+44.jpg,train,positive,video_frame
+45.jpg,train,positive,video_frame
+46.jpg,test,positive,video_frame
+47.jpg,train,positive,video_frame
+48.jpg,train,positive,video_frame
+49.jpg,test,positive,video_frame
+5.jpg,train,positive,video_frame
+50.jpg,train,positive,video_frame
+51.jpg,test,positive,video_frame
+52.jpg,test,positive,video_frame
+53.jpg,train,positive,video_frame
+54.jpg,train,positive,video_frame
+55.jpg,train,positive,video_frame
+56.jpg,train,positive,video_frame
+57.jpg,train,positive,video_frame
+58.jpg,train,positive,video_frame
+59.jpg,train,positive,video_frame
+6.jpg,train,positive,video_frame
+60.jpg,train,positive,video_frame
+61.jpg,train,positive,video_frame
+62.jpg,train,positive,video_frame
+63.jpg,train,positive,video_frame
+64.jpg,train,positive,video_frame
+65.jpg,train,positive,video_frame
+66.jpg,train,positive,video_frame
+67.jpg,train,positive,video_frame
+68.jpg,train,positive,video_frame
+69.jpg,test,positive,video_frame
+7.jpg,train,positive,video_frame
+70.jpg,train,positive,video_frame
+71.jpg,test,positive,phone_photo
+72.jpg,train,positive,phone_photo
+73.jpg,train,positive,phone_photo
+74.jpg,test,positive,phone_photo
+75.jpg,test,positive,phone_photo
+76.jpg,test,positive,phone_photo
+77.jpg,test,positive,phone_photo
+78.jpg,train,positive,phone_photo
+8.jpg,train,positive,video_frame
+9.jpg,test,positive,video_frame
+Captured photo (2).jpg,train,positive,phone_photo
+Captured photo (3).jpg,train,positive,phone_photo
+IMG_9283.jpg,train,positive,phone_photo
+IMG_9286.jpg,test,positive,phone_photo
+IMG_9289.jpg,train,positive,phone_photo
+IMG_9290.jpg,train,positive,phone_photo
+IMG_9291.jpg,test,positive,phone_photo
+IMG_9293.jpg,train,positive,phone_photo
+IMG_9296.jpg,train,positive,phone_photo
+IMG_9297.jpg,train,positive,phone_photo
+IMG_9300.jpg,train,positive,phone_photo
+IMG_9301.jpg,train,positive,phone_photo
+IMG_9302.jpg,train,positive,phone_photo
+IMG_9304.jpg,train,positive,phone_photo
+IMG_9305.jpg,train,positive,phone_photo
+IMG_9308.jpg,train,positive,phone_photo
+IMG_9309.jpg,train,positive,phone_photo
+IMG_9312.jpg,train,positive,phone_photo
+IMG_9313.jpg,test,positive,phone_photo
+IMG_9316.jpg,train,positive,phone_photo
+IMG_9317.jpg,train,positive,phone_photo
+IMG_9319.jpg,train,positive,phone_photo
+IMG_9321.jpg,train,positive,phone_photo
+IMG_9324.jpg,train,positive,phone_photo
+IMG_9325.jpg,train,positive,phone_photo
+IMG_9328.jpg,train,positive,phone_photo
+IMG_9329.jpg,train,positive,phone_photo
+IMG_9332.jpg,train,positive,phone_photo
+IMG_9333.jpg,test,positive,phone_photo
+IMG_9336.jpg,test,positive,phone_photo
+IMG_9337.jpg,train,positive,phone_photo
+IMG_9340.jpg,train,positive,phone_photo
+IMG_9341.jpg,train,positive,phone_photo
+IMG_9344.jpg,train,positive,phone_photo
+IMG_9345.jpg,train,positive,phone_photo
+IMG_9348.jpg,train,positive,phone_photo
+IMG_9349.jpg,train,positive,phone_photo
+IMG_9352.jpg,train,positive,phone_photo
+IMG_9353.jpg,train,positive,phone_photo
+IMG_9356.jpg,test,positive,phone_photo
+IMG_9357.jpg,train,positive,phone_photo
+IMG_9360.jpg,train,positive,phone_photo
+IMG_9361.jpg,train,positive,phone_photo
+IMG_9365.jpg,train,positive,phone_photo
+IMG_9366.jpg,train,positive,phone_photo
+IMG_9367.jpg,train,positive,phone_photo
+IMG_9370.jpg,train,positive,phone_photo
+IMG_9371.jpg,train,positive,phone_photo
+IMG_9374.jpg,train,positive,phone_photo
+IMG_9375.jpg,train,positive,phone_photo
+IMG_9378.jpg,train,positive,phone_photo
+IMG_9380.jpg,train,positive,phone_photo
+IMG_9381.jpg,train,positive,phone_photo
+IMG_9382.jpg,train,positive,phone_photo
+IMG_9383.jpg,test,positive,phone_photo
+IMG_9385.jpg,train,positive,phone_photo
+IMG_9386.jpg,train,positive,phone_photo
+IMG_9387.jpg,train,positive,phone_photo
+IMG_9388.jpg,test,positive,phone_photo
+Image (1).jpg,train,positive,phone_photo
+Image (10).jpg,train,positive,phone_photo
+Image (12).jpg,train,positive,phone_photo
+Image (13).jpg,train,positive,phone_photo
+Image (14).jpg,train,positive,phone_photo
+Image (17).jpg,train,positive,phone_photo
+Image (18).jpg,train,positive,phone_photo
+Image (19).jpg,test,positive,phone_photo
+Image (21).jpg,train,positive,phone_photo
+Image (23).jpg,test,positive,phone_photo
+Image (27).jpg,test,positive,phone_photo
+Image (3).jpg,train,positive,phone_photo
+Image (32).jpg,train,positive,phone_photo
+Image (33).jpg,train,positive,phone_photo
+Image (4).jpg,train,positive,phone_photo
+Image (6).jpg,train,positive,phone_photo
+Image (8).jpg,test,positive,phone_photo
+Image (9).jpg,train,positive,phone_photo
+Image.jpg,train,positive,phone_photo
+Media (1).jpg,train,positive,phone_photo
+Media (11).jpg,train,positive,phone_photo
+Media (14).jpg,test,positive,phone_photo
+Media (16).jpg,test,positive,phone_photo
+Media (17).jpg,train,positive,phone_photo
+Media (2).jpg,train,positive,phone_photo
+Media (4).jpg,train,positive,phone_photo
+Media (5).jpg,train,positive,phone_photo
+Media (6).jpg,train,positive,phone_photo
+Media (7).jpg,test,positive,phone_photo
+Media (9).jpg,train,positive,phone_photo
+Media.jpg,train,positive,phone_photo
+Selected photo (10).jpg,train,positive,phone_photo
+Selected photo (11).jpg,train,positive,phone_photo
+Selected photo (2).jpg,train,positive,phone_photo
+Selected photo (3).jpg,train,positive,phone_photo
+Selected photo (4).jpg,train,positive,phone_photo
+Selected photo (5).jpg,train,positive,phone_photo
+Selected photo (6).jpg,train,positive,phone_photo
+Selected photo (7).jpg,train,positive,phone_photo
+Selected photo (8).jpg,train,positive,phone_photo
+Selected photo (9).jpg,train,positive,phone_photo
+clip_1.jpg,train,positive,video_frame
+clip_10.jpg,train,positive,video_frame
+clip_11.jpg,train,positive,video_frame
+clip_12.jpg,test,positive,video_frame
+clip_13.jpg,train,negative,video_frame
+clip_14.jpg,train,positive,video_frame
+clip_15.jpg,train,positive,video_frame
+clip_16.jpg,train,positive,video_frame
+clip_17.jpg,train,positive,video_frame
+clip_2.jpg,train,positive,video_frame
+clip_22.jpg,test,positive,video_frame
+clip_23.jpg,test,positive,video_frame
+clip_24.jpg,test,positive,video_frame
+clip_3.jpg,train,positive,phone_photo
+clip_4.jpg,train,negative,phone_photo
+clip_5.jpg,train,positive,video_frame
+clip_6.jpg,train,positive,video_frame
+clip_7.jpg,train,positive,video_frame
+clip_8.jpg,train,positive,video_frame
+clip_9.jpg,train,positive,video_frame
+n10.jpg,test,negative,video_frame
+n11.jpg,train,negative,video_frame
+n12.jpg,train,negative,video_frame
+n13.jpg,train,negative,video_frame
+n14.jpg,train,negative,video_frame
+n15.jpg,train,negative,video_frame
+n16.jpg,test,negative,phone_photo
+n17.jpg,train,negative,video_frame
+n18.jpg,train,negative,video_frame
+n19.jpg,train,negative,video_frame
+n20.jpg,train,negative,video_frame
+n21.jpg,train,negative,video_frame
+n22.jpg,test,negative,phone_photo
+n23.jpg,train,negative,phone_photo
+n24.jpg,train,negative,phone_photo
+n5.jpg,train,negative,video_frame
+n6.jpg,train,negative,video_frame
+n7.jpg,train,negative,video_frame
+n8.jpg,train,negative,video_frame
+n9.jpg,test,negative,video_frame
+n_1.jpg,train,negative,phone_photo
+n_2.jpg,test,negative,phone_photo
+n_3.jpg,train,negative,phone_photo
+n_4.jpg,train,negative,phone_photo

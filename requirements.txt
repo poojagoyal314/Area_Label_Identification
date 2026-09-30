@@ -3,3 +3,6 @@ pillow-heif
 pandas         
 jupyter         
 matplotlib 
+ultralytics
+mlflow
+torch         
