@@ -4,7 +4,7 @@
 data/raw/
 data/interim/
 data/manifests/box_check/
-
+data/yolo/
 
 
 # --- Models & experiment output ----------------------------------------
@@ -16,6 +16,8 @@ models/
 
 # MLflow local tracking store. This is generated experiment data, not source.
 mlruns/
+mlflow.db
+runs/
 
 # --- Python -------------------------------------------------------------
 __pycache__/
@@ -38,3 +40,4 @@ src\check_boxes
 
 # --- tools --------------------------------------------------------------
 tools/label-studio/ls-data/
+
