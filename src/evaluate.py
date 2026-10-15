@@ -46,19 +46,41 @@ EXPERIMENT  = os.environ.get("MLFLOW_EXPERIMENT_NAME", "area_label_detector")
 
 
 def build_filtered_yaml(modality: str, image_names: list[str]) -> Path:
-    """Write an image-list .txt + a data.yaml whose val points at it."""
-    list_path = YOLO_ROOT / f"val_{modality}.txt"
-    # YOLO reads absolute (or data.yaml-relative) image paths, one per line.
-    with open(list_path, "w") as f:
-        for name in image_names:
-            f.write(str((IMAGES_VAL / name).resolve()) + "\n")
+    """
+    Build parallel images/ + labels/ folders for just this modality's test
+    images, then a data.yaml pointing val at them.
+
+    We build real sibling folders (images/val_<modality>/ and
+    labels/val_<modality>/) rather than a list file, because YOLO finds each
+    label by swapping '/images/' -> '/labels/' in the image path. A list of
+    resolved symlink targets (e.g. data/interim/11.jpg) has no '/images/' to
+    swap, so labels aren't found. Physical sibling folders make the swap work.
+    """
+    img_dir = YOLO_ROOT / "images" / f"val_{modality}"
+    lbl_dir = YOLO_ROOT / "labels" / f"val_{modality}"
+    img_dir.mkdir(parents=True, exist_ok=True)
+    lbl_dir.mkdir(parents=True, exist_ok=True)
+
+    for name in image_names:
+        stem = Path(name).stem
+        src_img = (IMAGES_VAL / name)                     # existing symlink
+        src_lbl = (YOLO_ROOT / "labels" / "val" / f"{stem}.txt")
+        dst_img = img_dir / name
+        dst_lbl = lbl_dir / f"{stem}.txt"
+        # point new symlinks at the SAME real targets the val/ symlinks use
+        for dst, src in ((dst_img, src_img), (dst_lbl, src_lbl)):
+            if dst.exists() or dst.is_symlink():
+                dst.unlink()
+            # resolve() here is fine: we link to the real file, but the link
+            # LIVES under images/<...> so YOLO's path-swap still works.
+            os.symlink(src.resolve(), dst)
 
     yaml_path = YOLO_ROOT / f"data_{modality}.yaml"
     yaml_path.write_text(
         f"# Auto-generated filtered val set: {modality} test images only.\n"
         f"path: {YOLO_ROOT.resolve()}\n"
         f"train: images/train\n"          # unused by val, but val() wants the key present
-        f"val: {list_path.resolve()}\n"
+        f"val: images/val_{modality}\n"
         f"names:\n"
         f"  0: area_label\n"
     )
