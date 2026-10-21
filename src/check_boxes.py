@@ -1,7 +1,7 @@
 # check_boxes.py — draw derived YOLO boxes back onto their images to verify placement
 from pathlib import Path
 import matplotlib
-matplotlib.use("Agg")            # save to file, no GUI needed
+matplotlib.use("Agg")            
 import matplotlib.pyplot as plt
 import matplotlib.patches as patches
 from PIL import Image
@@ -11,8 +11,8 @@ LABELS = Path("data/annotations")
 OUT    = Path("data/manifests/box_check")   # where the annotated previews land
 OUT.mkdir(parents=True, exist_ok=True)
 
-# pick a few images to check — mix of easy and multi-box; edit these names
-SAMPLES = ["2.jpg", "1.jpg", "10.jpg"]      # 2.jpg has 2 boxes (good test)
+# pick a few images to check
+SAMPLES = ["2.jpg", "1.jpg", "10.jpg"]     
 
 for name in SAMPLES:
     img_path = IMAGES / name

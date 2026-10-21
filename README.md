@@ -1,14 +1,13 @@
 # Area Label Detector
 
 A proof-of-concept object detector that locates **area labels** in warehouse
-images — the signs mounted on walls, hung between bays, or fixed to racking that
+images. Area labels are the signs mounted on walls, hung between bays, or fixed to racking that
 mark *what a location is* (e.g. "D-01-05", a country flag for a shipping
 destination). The goal is localization (find every area label, wherever it is,
 however many), not reading the text on them (OCR is out of scope).
 
 This README doubles as a **decisions log**: it records not just *what* the
-project does but *why* each non-obvious choice was made, so the reasoning
-survives longer than my memory of it.
+project does but *why* each non-obvious choice was made.
 
 ---
 
@@ -20,7 +19,7 @@ Trained a fine-tuned nano YOLO detector on 260 hand-annotated images.
   trusted headline estimate for the chosen config (yolo11n @ 960px).
 - **On the deployment modality (video frames), single-split held-out: mAP50 ≈
   0.91 (precision 1.00, recall 0.90)** — stronger than on the out-of-modality
-  phone photos (mAP50 ≈ 0.69). The weakness we spent the project guarding against
+  phone photos (mAP50 ≈ 0.69). The weakness that was assumed in the project
   (video being masked by easier phone photos in a blended score) turned out not
   to exist: video is the *strong* modality.
 - **Higher input resolution (1280px) was tested and gave no meaningful gain**
@@ -49,12 +48,12 @@ An area label is a **contextual/functional** category, not a visual one. Area
 labels vary wildly in appearance (barcodes, QR codes, plain alphanumeric signs,
 country flags) and some overlap visually with the crate labels we ignore. The
 main through-line is **context**: area labels are mounted, isolated, and
-elevated (on walls, hung, or on rack ends). We work under the assumption that
+elevated (on walls, hung, or on rack ends). Work is done under the assumption that
 this context invariant holds.
 
 Guiding principle throughout: **difficulty must not deform the task definition,
-but must be instrumented so failure is diagnosable.** We define "area label" by
-what it *is*, and tag each instance so that at evaluation, failure can be
+but must be instrumented so failure is diagnosable.** An "area label" is defined by
+what it *is*, and each instance is tagged so that at evaluation, failure can be
 attributed to a *specific* sub-population rather than hidden in a blended
 average.
 
@@ -89,8 +88,7 @@ concentrated in the *phone* photos, which is part of why phone scores lower.
 
 ## Annotation
 
-Tool: **Label Studio**, run locally in Docker (off-the-shelf image, pulled not
-built). Chosen specifically for **per-region attributes**, which the
+Tool: **Label Studio**, run locally in Docker (off-the-shelf image). Chosen specifically for **per-region attributes**, which the
 instrumentation plan requires.
 
 ### Schema
@@ -150,7 +148,7 @@ tools/label-studio/
 ### Conversion notes
 
 - HEIC decoded via `pillow-heif`; **EXIF orientation baked into pixels** then
-  stripped (19 images needed rotation — a silent annotate-sideways bug avoided).
+  stripped (20 images needed rotation — a silent annotate-sideways bug avoided).
 - Non-destructive, collision-halting, with a verified manifest. The manifest is
   how the two-modality structure was discovered.
 
@@ -222,7 +220,7 @@ k=5@960 and k=5@1280 use identical folds (fixed seed) for a clean comparison.
 - [x] Baseline model (yolo11n) + MLflow tracking
 - [x] Sliced evaluation: video vs phone (the key finding)
 - [x] Cross-validation (k=3, k=5@960, k=5@1280) — config selected: yolo11n @ 960
-- [ ] Train final model on all 260 images with the chosen config; save durably
+- [x] Train final model on all 260 images with the chosen config; save durably
 - [ ] (Optional) Export to TensorRT and deploy inference on Jetson Orin Nano
 
 ---

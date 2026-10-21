@@ -5,6 +5,7 @@ data/raw/
 data/interim/
 data/manifests/box_check/
 data/yolo/
+data/test_new/
 
 
 # --- Models & experiment output ----------------------------------------
