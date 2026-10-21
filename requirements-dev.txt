@@ -1,0 +1,5 @@
+# Lightweight tools for CI and local development — NOT the pipeline deps.
+# The heavy runtime deps (torch, ultralytics, etc.) live in requirements.txt
+# and are not needed to lint, compile-check, or unit-test the pure logic.
+ruff
+pytest
